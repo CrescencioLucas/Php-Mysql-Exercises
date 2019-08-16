@@ -29,9 +29,9 @@
 
         <table>
             <tr>
-                <td><strong>Email</strong></td>
+                <td><strong>Membros</strong></td>
                 <td width="10">&nbsp;</td>
-                <td><strong>Nome</strong></td>
+                <td><strong>Email</strong></td>
                 <td width="10">&nbsp;</td>
                 <td><strong>Escola</strong></td>
                 <td width="10">&nbsp;</td>
