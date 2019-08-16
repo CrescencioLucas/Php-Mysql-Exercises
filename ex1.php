@@ -3,11 +3,11 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Exibe os carros cadastrados</title>
+        <title>Exibe as pessoas cadastradas</title>
     </head>
 
     <body>
-        <h1>Carros cadastrados:</h1>
+        <h1>Pessoas Cadastradas:</h1>
 
         <?php
             //Database connection details to mySQL
@@ -18,7 +18,7 @@
             //Make a connection to the database
             $conn = mysqli_connect($host, $user, $passw, $dbname) or die("Unable to connect!");
             //Create the SQL query
-            $query = "SELECT membros.email, membros.nome, membros.escola, membros.funcao, escolas.estado, equipes.nome_equipe FROM membros, escola, equipes 
+            $query = "SELECT membros.email, membros.nome, membros.escola, membros.funcao, escolas.estado, equipes.nome_equipe, equipes.num_equipe FROM membros, escolas, equipes 
             WHERE equipes.num_equipe=membros.num_equipe AND escolas.nome_escola=membros.escola ORDER BY nome ASC"; // Ordena a tab
             $result = mysqli_query( $conn, $query ) or die ("Error in query");
             //Fetch the result into an associative array
